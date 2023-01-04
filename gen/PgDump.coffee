@@ -7,17 +7,17 @@
   path > join
   utax/read
   utax/write
-  ~/PKG
+  ~/MOD
   zx/globals:
 
-SCHEMA_PKG = {}
+SCHEMA_MOD = {}
 
-for i from PKG
+for i from MOD
   if i == 'core'
     s = 'public'
   else
     s = i.replaceAll(/[\.-]/g,'_')
-  SCHEMA_PKG[s] = i
+  SCHEMA_MOD[s] = i
 
 RUN = []
 CREATE_KIND = [
@@ -57,7 +57,7 @@ dump = (pkg, schema, out)=>
 
 < default main = ->
   for schema from await LI0"SELECT schema_name FROM information_schema.schemata WHERE schema_name NOT IN ('information_schema', 'pg_toast', 'pg_catalog')"
-    pkg = SCHEMA_PKG[schema]
+    pkg = SCHEMA_MOD[schema]
     if not pkg
       continue
     out = join ROOT,'src',pkg,'init/pg'

@@ -10,11 +10,11 @@
   ./CONF > ROOT
   fs > existsSync rmSync readdirSync
 
-PKG = join ROOT,'src'
+MOD = join ROOT,'src'
 I18N = 'i18n'
 
 replace = (pkg)=>
-  dir = join PKG, pkg, I18N
+  dir = join MOD, pkg, I18N
   lib = join ROOT, 'lib', pkg, I18N
   hook = join(lib,'hook.js')
   console.log hook
@@ -37,8 +37,8 @@ replace = (pkg)=>
   return true
 
 < default main = =>
-  for pkg from readdirSync PKG
-    dir_pkg = join PKG,pkg
+  for pkg from readdirSync MOD
+    dir_pkg = join MOD,pkg
     dir_i18n = join dir_pkg,I18N
     if existsSync dir_i18n
 

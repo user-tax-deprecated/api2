@@ -9,8 +9,8 @@
 < main = =>
   await i18n()
   await rsync()
-  {PKG} = await import("~/CONF")
-  for pkg from PKG
+  {MOD} = await import("~/MOD")
+  for pkg from MOD
     fp = join ROOT,'lib',pkg,'init/build.js'
     if existsSync fp
       {default:build} = await import(fp)

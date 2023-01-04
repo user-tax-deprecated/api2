@@ -4,6 +4,7 @@
   fs > existsSync symlinkSync lstatSync realpathSync rmSync
   js-yaml:yaml
   utax/read
+  utax/write
   @rmw/thisdir
 
 
@@ -49,6 +50,13 @@ MOD_YML = yaml.load read MOD_YML
           console.warn mod_yml, '>', i,'NOT EXIST'
     else
       console.warn mod_yml,'NOT EXIST'
+  write(
+    join(
+      SRC
+      'MOD.js'
+    )
+    'export default '+JSON.stringify([...exist])+'\n'
+  )
   return
 
 if process.argv[1] == decodeURI (new URL(import.meta.url)).pathname

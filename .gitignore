@@ -13,5 +13,5 @@ bun.lockb
 !/src/*.yml
 
 mod.yml
-src/PKG.js
+src/MOD.js
 CONF.js
