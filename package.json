@@ -11,7 +11,7 @@
     "coffee_plus": "^0.0.43",
     "coffeescript": "^2.7.0",
     "concurrently": "^7.6.0",
-    "esbuild": "^0.16.12"
+    "esbuild": "^0.16.13"
   },
   "dependencies": {
     "@iuser/console": "^0.0.3",
@@ -23,16 +23,16 @@
     "@user.tax/captcha-img": "^0.0.18",
     "chalk": "^5.2.0",
     "js-yaml": "^4.1.0",
-    "json5": "^2.2.2",
+    "json5": "^2.2.3",
     "lodash-es": "^4.17.21",
     "marked": "^4.2.5",
     "msgpackr": "^1.8.1",
     "nodemailer": "^6.8.0",
-    "postgres": "^3.3.2",
-    "prexit": "^2.0.0",
+    "postgres": "^3.3.3",
+    "prexit": "^2.0.1",
     "ua-parser-js": "^1.0.32",
     "ulb": "^0.0.1",
-    "utax": "^0.0.30",
+    "utax": "^0.0.32",
     "zx": "^7.1.1",
     "~": "link:."
   },
