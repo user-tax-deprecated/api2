@@ -1,4 +1,4 @@
-import thisdir from "@rmw/thisdir";
-import { dirname, join } from "path";
+> @rmw/thisdir
+  path > dirname join
 
-export default thisdir(import.meta);
+export default thisdir import.meta
