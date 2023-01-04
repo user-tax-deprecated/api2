@@ -7,8 +7,9 @@ bun.lockb
 
 /lib/
 /src/*
+
 !/src/Init/
 !/src/*.js
 !/src/*.coffee
-/src/CONF.js
 
+/src/CONF.js
