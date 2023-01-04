@@ -7,7 +7,7 @@
   path > join
   utax/read
   utax/write
-  ~/CONF > PKG
+  ~/PKG
   zx/globals:
 
 SCHEMA_PKG = {}
