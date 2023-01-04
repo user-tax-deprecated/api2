@@ -6,7 +6,7 @@ cd $DIR
 if [ -n "$1" ]; then
   cmd=$1
 else
-  cmd=./lib/index.js
+  cmd=./lib/Http/index.js
 fi
 
 exec $cmd
