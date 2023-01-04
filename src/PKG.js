@@ -1,4 +1,4 @@
-export const PKG = [
+export default [
 	"Redis",
 	"Pg",
 	"Core",
