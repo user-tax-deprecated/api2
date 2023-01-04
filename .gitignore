@@ -12,4 +12,4 @@ bun.lockb
 !/src/*.js
 !/src/*.coffee
 
-/src/CONF.js
+CONF.js
