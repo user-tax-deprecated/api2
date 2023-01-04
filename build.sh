@@ -8,7 +8,7 @@ rm -rf lib
 
 bun run cep -- -c src -o lib >/dev/null
 
-./gen/build.coffee
+./lib/Init/gen/build.js
 
 cd lib
 
