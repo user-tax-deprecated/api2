@@ -8,7 +8,6 @@ bun.lockb
 /lib/
 /src/*
 
-!/src/Init/
 !/src/*.js
 !/src/*.coffee
 
