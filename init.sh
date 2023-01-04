@@ -4,6 +4,7 @@ DIR=$(dirname $(realpath "$0"))
 cd $DIR
 set -ex
 
+./init.mod.coffee
 ./build.sh
 ./lib/Redis/init/merge.js
 cd ./src/Pg/init

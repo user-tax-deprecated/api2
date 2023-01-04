@@ -13,7 +13,7 @@ BASE = dirname ROOT
 MOD_YML = join SRC,'mod.yml'
 if not existsSync MOD_YML
   console.log MOD_YML, "not exist\ncopy #{SRC}/mod.example.yml to mod.yml"
-  process.exit()
+  process.exit(1)
 MOD_YML = yaml.load read MOD_YML
 
 < default main = =>
