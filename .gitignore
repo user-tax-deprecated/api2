@@ -10,5 +10,7 @@ bun.lockb
 
 !/src/*.js
 !/src/*.coffee
+!/src/*.yml
 
+mod.yml
 CONF.js
