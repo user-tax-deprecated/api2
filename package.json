@@ -1,0 +1,44 @@
+{
+  "name": "@user.tax/api",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/*"
+  },
+  "devDependencies": {
+    "@iuser/i18n": "^0.0.53",
+    "chokidar": "^3.5.3",
+    "coffee_plus": "^0.0.43",
+    "coffeescript": "^2.7.0",
+    "concurrently": "^7.6.0",
+    "esbuild": "^0.16.12"
+  },
+  "dependencies": {
+    "@iuser/console": "^0.0.3",
+    "@iuser/node-loader": "^0.0.46",
+    "@iuser/wasm-set": "^0.0.8",
+    "@rmw/thisdir": "^0.0.2",
+    "@u6x/jsext": "^0.0.27",
+    "@u6x/ru": "link:../ru/ru",
+    "@user.tax/captcha-img": "^0.0.18",
+    "chalk": "^5.2.0",
+    "js-yaml": "^4.1.0",
+    "json5": "^2.2.2",
+    "lodash-es": "^4.17.21",
+    "marked": "^4.2.5",
+    "msgpackr": "^1.8.1",
+    "nodemailer": "^6.8.0",
+    "postgres": "^3.3.2",
+    "prexit": "^2.0.0",
+    "ua-parser-js": "^1.0.32",
+    "ulb": "^0.0.1",
+    "utax": "^0.0.30",
+    "zx": "^7.1.1",
+    "~": "link:."
+  },
+  "version": "0.0.0",
+  "license": "(BUSL-1.1 OR COMMERCIAL)",
+  "files": [
+    "lib/*"
+  ]
+}

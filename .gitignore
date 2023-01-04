@@ -1,0 +1,14 @@
+node_modules/
+bun.lockb
+.env
+.DS_Store 
+
+/sh/rsync.js
+
+/lib/
+/src/*
+!/src/Init/
+!/src/*.js
+!/src/*.coffee
+/src/CONF.js
+
