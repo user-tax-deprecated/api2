@@ -2,7 +2,9 @@
 
 > esbuild > build
   path > join dirname basename
-  ./CONF > ROOT
+  ~/ROOT:_ROOT
+
+ROOT = dirname _ROOT
 
 LIB = join ROOT, 'lib'
 API = join LIB,'api'
