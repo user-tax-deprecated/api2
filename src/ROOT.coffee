@@ -3,4 +3,4 @@
 > @rmw/thisdir
   path > dirname join
 
-< default thisdir import.meta
+export default thisdir import.meta
