@@ -17,6 +17,7 @@ if not existsSync MOD_YML
 MOD_YML = yaml.load read MOD_YML
 
 < default main = =>
+  exist = new Set
   for [dir, li] from Object.entries MOD_YML
     root = join BASE, dir
     mod_yml = join root, 'mod.yml'
@@ -27,6 +28,10 @@ MOD_YML = yaml.load read MOD_YML
       for i from li
         if i of dict
           for mod from dict[i]
+            if exist.has mod
+              console.log dir, mod, 'conflict'
+              continue
+            exist.add mod
             to = join root, mod
             console.log to
             src_mod = join SRC,mod
